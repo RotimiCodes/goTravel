@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25.45dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/go_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activities_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/activities_text"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hotels_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/buttons_text"
+        app:layout_constraintTop_toBottomOf="@+id/activities_btn_layout">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/flights_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/activities_text"
+        app:layout_constraintTop_toBottomOf="@+id/hotels_btn_layout">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activities_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/activites_ic"
+        android:drawableRight="@drawable/forward_ixc"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_text"
+        android:textIsSelectable="true"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hotels_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/hotels_ic"
+        android:drawableRight="@drawable/forward_ixc"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_text"
+        android:textIsSelectable="true"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/flights_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/hotels_ic"
+        android:drawableRight="@drawable/forward_ixc"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_text"
+        android:textIsSelectable="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

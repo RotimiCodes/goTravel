@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VoyatekAssessment</string>
+
+
+    <string name="activities_text">
+    <![CDATA[
+        <font face="poppins_medium" size="16">Find Amazing Things To Do. Anytime, Anywhere.</font><br/>
+        <font face="poppins_regular" size="12">I want the activities to have a font type of poppins_medium size 16sp and the second line to use poppins_regular and size 12</font>
+    ]]>
+</string>
+
+
+</resources>

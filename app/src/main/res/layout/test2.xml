@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView 1 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25.45dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/go_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ImageView 2 -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/banner"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <!-- Activities Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activities_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/buttons_text"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/activites_ic"
+            android:drawableRight="@drawable/forward_ixc"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:elevation="0dp"
+            android:text="Activities"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hotels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/buttons_text"
+        app:layout_constraintTop_toBottomOf="@+id/activities_btn">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/hotels_ic"
+            android:drawableRight="@drawable/forward_ixc"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="Hotels"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/flights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/buttons_text"
+        app:layout_constraintTop_toBottomOf="@+id/hotels">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/flights_ic"
+            android:drawableRight="@drawable/forward_ixc"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="Flights"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/immigrations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/buttons_text"
+        app:layout_constraintTop_toBottomOf="@+id/visas">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/immigration_ic"
+            android:drawableRight="@drawable/forward_ixc"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="Immigration"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/visas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        android:foreground="@drawable/buttons_text"
+        app:layout_constraintTop_toBottomOf="@+id/flights">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/visa_ic"
+            android:drawableRight="@drawable/forward_ixc"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="Visa"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Bottom navigation bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Feeds button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feeds_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/feeds_ic"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/marketplace_btn"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Marketplace button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/marketplace_btn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"
+            android:letterSpacing="-0.02"
+            android:text="Marketplace"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/wallet_btn"
+            app:layout_constraintStart_toEndOf="@+id/feeds_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Wallet button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wallet_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:text="Wallet"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marketplace_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Dashboard button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dashboard_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:text="Wallet"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wallet_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Supports button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/supports_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:text="Supports"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

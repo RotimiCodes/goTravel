@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F0F2F5">
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/back_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_box"
+    android:drawableLeft="@drawable/back_ic"
+    android:drawablePadding="20dp"
+    android:fontFamily="@font/poppins_medium"
+    android:gravity="center_vertical"
+    android:letterSpacing="-0.02"
+
+    android:paddingStart="20dp"
+    android:text="Activities"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    android:drawableRight="@drawable/filter"
+    android:paddingEnd="18dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/search_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/white_box"
+    android:paddingBottom="20dp"
+    app:layout_constraintTop_toBottomOf="@id/back_btn"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/somehow_big_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drop_down"
+        android:src="@drawable/drop_down"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_text" />
+
+    <TextView
+        android:id="@+id/anything"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Amazing Things To Do. Anytime, Anywhere."
+        android:textAppearance="@style/text_wey_small"
+        android:textColor="#647995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_text" />
+
+    <TextView
+        android:id="@+id/looko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your destination"
+        android:textAppearance="@style/text_wey_small"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/anything" />
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_box"
+        android:text="Doha, Qatar"
+        android:paddingStart="14dp"
+        android:drawableEnd="@drawable/forward_ixc"
+        android:textAppearance="@style/text_wey_small"
+        android:textSize="14sp"
+        android:inputType="textAutoComplete"
+        android:layout_marginEnd="18dp"
+        android:paddingEnd="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/looko"
+        app:layout_constraintTop_toBottomOf="@id/looko" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/search_box"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/first_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/doha_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/gotoaplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/val_dest"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/second_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/doha_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_img_layout">
+
+        <ImageButton
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/val_dest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
